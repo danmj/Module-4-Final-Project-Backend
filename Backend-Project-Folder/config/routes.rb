@@ -3,7 +3,9 @@ Rails.application.routes.draw do
   # see http://guides.rubyonrails.org/routing.html
   namespace :api do
     namespace :v1 do
-      resources :users, only: [:index, :update]
+      resources :users, only: [:index, :show, :update]
+      resources :listings, only: [:index, :show ]
+      resources :cities, only: [:index, :show ]
     end
   end
 end
