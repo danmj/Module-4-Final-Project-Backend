@@ -28,8 +28,6 @@ Photo.create({url: 'https://a0.muscache.com/im/pictures/19bdd0ed-7b91-45f1-a59f-
 
 puts "Added four photos to first listing"
 
-Listing.create({name: "Lovely Abode", owner: "Nathalia Fagundes", city: nyc})
-
 Booking.create({listing: l1, user: u1})
 
 puts "Booked the first listing to the first user."
