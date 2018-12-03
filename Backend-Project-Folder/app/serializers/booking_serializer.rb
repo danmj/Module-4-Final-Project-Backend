@@ -1,6 +1,7 @@
 class BookingSerializer < ActiveModel::Serializer
   attributes :id, :listing
 
+  #belongs_to listing
   def listing
     {
       id: object.listing.id,
