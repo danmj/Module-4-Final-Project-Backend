@@ -8,15 +8,9 @@
 
 u1 = User.create({first_name: 'Roger', last_name: 'Vera', email: 'roger.vera@outlook.com'})
 
-puts "Created single user."
-
 nyc = City.create({name: "New York"})
 
-puts "Created single city."
-
 l1 = Listing.create({name: "Rooftop Paradise", owner: "Alexander Butler", city: nyc, max_occupants: 4, pet_friendly: false, wifi: true, tv: true, pool: false, parking: false, kitchen: true, shared: false, price: 380.00, average_rating: 4.2, description: "Clipper yardarm belay fathom Arr Cat o'nine tails quarter bring a spring upon her cable black spot measured fer yer chains. Reef sails fire in the hole lee Sea Legs aye haul wind fluke cog run a rig chandler. Sail ho prow bucko smartly parley plunder rigging maroon lee coffer."})
-
-puts "Created single listing."
 
 Photo.create({url: 'https://a0.muscache.com/im/pictures/67ce6fca-4d7a-4e44-8ba6-feabd1a4a0f1.jpg?aki_policy=x_large', imageable: l1})
 
@@ -25,13 +19,6 @@ Photo.create({url: 'https://a0.muscache.com/im/pictures/1dedabba-cacd-432a-8161-
 Photo.create({url: 'https://a0.muscache.com/im/pictures/7f387912-d7bc-4fab-9313-173963d8aed4.jpg?aki_policy=x_large', imageable: l1})
 
 Photo.create({url: 'https://a0.muscache.com/im/pictures/19bdd0ed-7b91-45f1-a59f-824bc7659597.jpg?aki_policy=x_large', imageable: l1})
-
-puts "Added four photos to first listing"
-
-Booking.create({listing: l1, user: u1})
-
-puts "Booked the first listing to the first user."
-
 
 l2 = Listing.create({name: "Lovely Abode", owner: "Nathalia Fagundes", city_id: 1, max_occupants: 2, pet_friendly: true, wifi: false, tv: false, pool: false, parking: false, kitchen: false, shared: true, price: 140.00, average_rating: 3.4, description: "Avast league lass parrel execution dock mizzen piracy Jack Tar draught American Main. Sutler chase guns bilge rat smartly sloop snow shrouds draft fathom parley. Knave tender handsomely Davy Jones' Locker broadside Nelsons folly dance the hempen jig squiffy plunder Cat o'nine tails."})
 

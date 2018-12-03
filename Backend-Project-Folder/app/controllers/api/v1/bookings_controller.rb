@@ -3,6 +3,7 @@ class Api::V1::BookingsController < ApplicationController
 
   def create
     @booking = Booking.new(booking_params)
+    byebug
     if @booking.valid?
       @booking.save
       render json: @booking, status: :accepted
@@ -25,7 +26,7 @@ end
 private
 
 def booking_params
-  params.require(:booking).permit(:user_id, :listing_id)
+  params.require(:booking).permit(:user_id, :listing_id, :start_date, :end_date, :guests)
 end
 
 def find_booking

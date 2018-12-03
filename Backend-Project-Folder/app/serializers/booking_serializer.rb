@@ -1,5 +1,5 @@
 class BookingSerializer < ActiveModel::Serializer
-  attributes :id, :listing
+  attributes :id, :listing, :start_date, :end_date, :guests
 
   #belongs_to listing
   def listing
