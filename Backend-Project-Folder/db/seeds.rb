@@ -56,7 +56,7 @@ Booking.create({listing_id: 1, user_id: 1, start_date: "2018-12-06", end_date: "
 Booking.create({listing_id: 1, user_id: 1, start_date: "2018-12-06", end_date: "2018-12-12", guests: 2})
 
 # Start after, end on
-Booking.new({listing_id: 2, user_id: 1, start_date: "2018-12-06", end_date: "2018-12-09", guests: 2})
+Booking.create({listing_id: 2, user_id: 1, start_date: "2018-12-06", end_date: "2018-12-09", guests: 2})
 
 
 puts "Database Seeded"

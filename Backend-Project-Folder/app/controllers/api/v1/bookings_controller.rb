@@ -1,5 +1,5 @@
 class Api::V1::BookingsController < ApplicationController
-  before_action :find_booking, only: [:update]
+  before_action :find_booking, only: [:update, :destroy]
 
   def create
     @booking = Booking.new(booking_params)
@@ -19,6 +19,11 @@ class Api::V1::BookingsController < ApplicationController
     else
       render json: {errors: @booking.errors.full_messages}, status: :unprocessible_entity
     end
+  end
+
+  def destroy
+    @booking.destroy
+    render json: @booking, status: :accepted
   end
 
 end
