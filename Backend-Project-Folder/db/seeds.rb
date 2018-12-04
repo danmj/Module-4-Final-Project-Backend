@@ -29,3 +29,34 @@ Photo.create({url: 'https://a0.muscache.com/im/pictures/a7c8a32a-ca31-43fa-8675-
 Photo.create({url: 'https://a0.muscache.com/im/pictures/78fc177e-7572-48d8-ae3b-896774f67558.jpg?aki_policy=x_large', imageable: l2})
 
 Photo.create({url: 'https://a0.muscache.com/im/pictures/111e8df7-f41b-4a4a-b5af-c4211ccf9b15.jpg?aki_policy=x_large', imageable: l2})
+
+
+# Good booking
+Booking.create({listing_id: 1, user_id: 1, start_date: "2018-12-04", end_date: "2018-12-09", guests: 2})
+
+# Start on, end before
+Booking.create({listing_id: 1, user_id: 1, start_date: "2018-12-04", end_date: "2018-12-07", guests: 2})
+
+# Start on, end after
+Booking.create({listing_id: 1, user_id: 1, start_date: "2018-12-04", end_date: "2018-12-10", guests: 2})
+
+# Start before, end before
+Booking.create({listing_id: 1, user_id: 1, start_date: "2018-12-03", end_date: "2018-12-05", guests: 2})
+
+# Start before, end after
+Booking.create({listing_id: 1, user_id: 1, start_date: "2018-12-03", end_date: "2018-12-10", guests: 2})
+
+# Start before, end on
+Booking.create({listing_id: 1, user_id: 1, start_date: "2018-12-03", end_date: "2018-12-09", guests: 2})
+
+# Start after, end before
+Booking.create({listing_id: 1, user_id: 1, start_date: "2018-12-06", end_date: "2018-12-08", guests: 2})
+
+# Start after, end after
+Booking.create({listing_id: 1, user_id: 1, start_date: "2018-12-06", end_date: "2018-12-12", guests: 2})
+
+# Start after, end on
+Booking.new({listing_id: 2, user_id: 1, start_date: "2018-12-06", end_date: "2018-12-09", guests: 2})
+
+
+puts "Database Seeded"
