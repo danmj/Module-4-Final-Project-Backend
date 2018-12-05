@@ -38,7 +38,7 @@ Photo.create({url: 'https://a0.muscache.com/im/pictures/78fc177e-7572-48d8-ae3b-
 
 Photo.create({url: 'https://a0.muscache.com/im/pictures/111e8df7-f41b-4a4a-b5af-c4211ccf9b15.jpg?aki_policy=x_large', imageable: l2})
 
-<<<<<<< HEAD
+
 l3 = Listing.create({name: "Small apartment", owner: "Dominic Jones", city_id: 1, max_occupants: 6, pet_friendly: true, wifi: true, tv: true, pool: false, parking: false, kitchen: true, shared: false, price: 85.00, average_rating: 3.1, description: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem."})
 
 Photo.create({url: 'https://a0.muscache.com/im/pictures/2bf692ae-a17f-441b-b9b6-45f5ae9910bd.jpg?aki_policy=xx_large', imageable: l3})
