@@ -3,7 +3,6 @@ class Api::V1::BookingsController < ApplicationController
 
   def create
     @booking = Booking.new(booking_params)
-    # byebug
     if @booking.valid?
       @booking.save
       render json: @booking, status: :accepted

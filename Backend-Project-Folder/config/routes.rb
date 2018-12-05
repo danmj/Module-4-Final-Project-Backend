@@ -6,7 +6,8 @@ Rails.application.routes.draw do
       resources :users, only: [:show, :update]
       resources :listings, only: [:index, :show]
       resources :cities, only: [:index, :show ]
-      resources :bookings, only:[:create, :update, :destroy]
+      resources :bookings, only: [:create, :update, :destroy]
+      resources :favorites, only: [:create, :destroy]
     end
   end
 end
