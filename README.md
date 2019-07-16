@@ -1,4 +1,4 @@
-# Module-4-Final-Project-Backend
+# MockBNB-Backend
 
 ## A RESTful JSON API built with Ruby on Rails
 
