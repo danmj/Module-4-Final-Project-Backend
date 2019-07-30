@@ -2,7 +2,7 @@
 
 ## A RESTful JSON API built with Ruby on Rails
 
-Team: Scoti, Roger, Daniel
+Holds data for cities, listings, bookings and favorites.
 
 
 ## Instructions to set up backend
