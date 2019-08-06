@@ -1,9 +1,6 @@
 # MockBNB-Backend
 
-## A RESTful JSON API built with Ruby on Rails
-
-Holds data for cities, listings, bookings and favorites.
-
+A RESTful JSON API built with Ruby on Rails. Holds data for cities, listings, bookings and favorites.
 
 ## Instructions to set up backend
 
